@@ -23,7 +23,7 @@ fieldset {
 	
 	 function myFunction(){
      var x= document.forms["CustRegister"]["fname"].value;
-	 var y= document.forms["CustRegister"]["lname"].value;
+	 
 
 		if(x=="" && y==""){
 		          alert("Please refill your form.");
@@ -52,7 +52,7 @@ fieldset {
 
 	   
 	   <font face="cinzel">
-				<a href="newindex.html">Home</a>
+				<a href="index.html">Home</a>
 				<a href="services.html">Services</a>
 				<a href="findus.html">Find us</a>
 				<a href="aboutus.html">About us</a>
@@ -62,10 +62,8 @@ fieldset {
 		<form name="CustRegister" action=""onsubmit="return myFunction()" method="POST"required>
  <fieldset>
   <legend>Customer:</legend>
-  <label for="fname">First Name: </label>
+  <label for="fname">Full Name: </label>
   <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last Name: </label>
-  <input type="text" id="lname" name="lname"><br><br>
   <label for="email">Email:</label>
   <input type="email" id="email" name="email"><br><br>
   <p> Type of vehicle: </p>
