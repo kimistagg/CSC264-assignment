@@ -23,6 +23,7 @@ fieldset {
 	
 	 function myFunction(){
      var x= document.forms["CustRegister"]["fname"].value;
+     var y= document.forms["CustRegister"]["lname"].value;
 	 
 
 		if(x=="" && y==""){
@@ -62,8 +63,10 @@ fieldset {
 		<form name="CustRegister" action=""onsubmit="return myFunction()" method="POST"required>
  <fieldset>
   <legend>Customer:</legend>
-  <label for="fname">Full Name: </label>
+  <label for="fname">First Name: </label>
   <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last Name: </label>
+  <input type="text" id="lname" name="lname"><br><br>
   <label for="email">Email:</label>
   <input type="email" id="email" name="email"><br><br>
   <p> Type of vehicle: </p>
