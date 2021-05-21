@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+	Get Started
+	</title>
+	<style type="text/css" media="Screen">
+	legend {
+    padding: 0 10px;
+    font: 12px Verdana, Arial, sans-serif;
+    color: #000000;
+    background-color: #ccc;
+    text-transform: uppercase;
+}
+fieldset {
+  background-color: black;
+  color: white;
+}
+	</style>
+	<script type="text/javascript">
+	
+	 function myFunction(){
+     var x= document.forms["CustRegister"]["fname"].value;
+	 var y= document.forms["CustRegister"]["lname"].value;
+
+		if(x==""&&y==""){
+		          alert("Please refill your form.");
+				  return false;
+				}
+		else
+		          alert("Form has submitted. Please wait for an update of your form slip via Email/SMS. Thank you.");
+				     return false;
+					}
+					</script>
+</head>
+<body background="backlogo2.png" link="#ff0000" alink="#FFFF00" vlink="#000">
+  <h2 align="center">
+       <img src="carwash.png" alt="Trulli" width="160"height="150">
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	   
+	   <font face="cinzel">
+				<a href="newindex.html">Home</a>
+				<a href="services.html">Services</a>
+				<a href="findus.html">Find us</a>
+				<a href="aboutus.html">About us</a>
+				</font>
+				</h2>
+				<br /><br />
+		<form name="CustRegister" action=""onsubmit="return myFunction()" method="POST"required>
+ <fieldset>
+  <legend>Customer:</legend>
+  <label for="fname">First Name: </label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last Name: </label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <p> Type of vehicle: </p>
+  <input type="radio" name="vc" id="cars" value="cars">
+  <label for="cars">Car</label>
+  <input type="radio" name="vc" id="suvvan" value="suvvan">
+  <label for="suvvan">SUV/Vans</label>
+  <input type="radio" name="vc" id="trucks" value="trucks">
+  <label for="trucks">Trucks</label><br><br>
+  <label for="service">Type of service:</label>
+
+  <select name="service" id="service">
+  <option selected>Select your service</option>
+  <option value="outside">Outside only</option>
+  <option value="outandin">Inside and Outside</option>
+  </select><br><br>
+  <label for="extra">Extra Service: </label>
+  <select name="extra" id="extra">
+  <option selected>Select extra service</option>
+  <option value="nn">None</option>
+  <option value="engclean">Engine Cleaning</option>
+  <option value="leaclean">Leather Cleaning</option>
+  <option value="polnwax">Polish and Wax</option>
+  </select><br><br>
+  <label for="num">Phone Number:</label><br>
+  <input type="text" name="phone" value="+60" id="num"><br><br>
+  <label for="payment">Payment Method: </label><br>
+  <input type="radio" name="payment" value="credit" id="payment">Card/PayPal/EWallet(Boost,TnG)
+  <input type="radio" name="payment" value="debit" id="payment">Cash<br><br>
+
+
+ </fieldset><br>
+ <input type="submit" value="Submit">
+</form>
+<script></script>
+</body>
+</html>
